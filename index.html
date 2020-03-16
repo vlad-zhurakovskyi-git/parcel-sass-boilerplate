@@ -5,12 +5,737 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Parcel Boilerplate SASS</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+        ScrollReveal({ duration: 1000 })
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>📦</h1>
-    <h2>🔥🚀💯 it seems like you got the Boilerplate running!</h2>
-    <script src="./js/index.js"></script>
+    <header id="home" class="header animate">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="header-logo">
+                    <img class="header-logo__img" src="./img/logo.png" alt="logo">
+                </a>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a data-scroll href="#home" class="header-nav__link">Home</a>
+                        </li>
+
+                        <li class="header-nav__item">
+                            <a data-scroll href="#features" class="header-nav__link">Features</a>
+                        </li>
+
+                        <li class="header-nav__item">
+                            <a data-scroll href="#hiw" class="header-nav__link">How it works</a>
+                        </li>
+
+                        <li class="header-nav__item">
+                            <a data-scroll href="#ref" class="header-nav__link">References</a>
+                        </li>
+
+                        <li class="header-nav__item">
+                            <a data-scroll href="#price" class="header-nav__link">Pricing</a>
+                        </li>
+
+                        <li class="header-nav__item">
+                            <a data-scroll href="#about" class="header-nav__link">About</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__burger">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="14" width="20" height="2" rx="1" fill="#24262C"/>
+                        <rect y="7" width="20" height="2" rx="1" fill="#24262C"/>
+                        <rect width="20" height="2" rx="1" fill="#24262C"/>
+                    </svg>
+                </div>
+
+                <div class="header-account">
+                    <a href="https://app.repositax.com/sign-up" class="btn btn-primary">Sign Up</a>
+                    <a href="https://app.repositax.com/login" class="btn btn-secondary">Log In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <svg class="rect-1" width="1440" height="1663" viewBox="0 0 1440 1663" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.14479e-05 831L1440 -0.384382L1440 1662.38L1.14479e-05 831Z" fill="#3BA2EC" fill-opacity="0.15"/>
+    </svg>
+
+    <img class="main-screen main-screen_desktop animate" src="/img/main-screen.png" alt="main-screen">
+    <img class="main-screen main-screen_mobile animate" src="/img/main-screen-tablet.png" alt="main-screen">
+
+    <section id="features" class="features">
+        <div class="container">
+            <h3 class="title animate">Features</h3>
+
+            <div class="features__wrapper">
+                <div class="features__col animate">
+                    <div class="features-item">
+                        <img class="features-item__icon" src="./img/features/icon-repository.svg" alt="repository">
+                        <div class="features-item__content">
+                            <h5 class="features-item__subtitle">Repository</h5>
+
+                            <ul class="features-item__list">
+                                <li class="features-item__point">Tax Returns</li>
+                                <li class="features-item__point">K-1</li>
+                                <li class="features-item__point">Investments Documents</li>
+                                <li class="features-item__point">Financial Documents</li>
+                                <li class="features-item__point">Digitize Papers K-1s</li>
+                            </ul>
+                        </div>
+
+                        <div class="features-item-rect">
+                            <img class="features-item-rect__figure" src="./img/features/rect-first.png" alt="react">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features__col animate">
+                    <div class="features-item">
+                        <img class="features-item__icon" src="./img/features/icon-distribution.svg" alt="repository">
+                        <div class="features-item__content">
+                            <h5 class="features-item__subtitle">Distribution</h5>
+
+                            <ul class="features-item__list">
+                                <li class="features-item__point">Secure Invitations</li>
+                                <li class="features-item__point">Investors</li>
+                                <li class="features-item__point">CPAs</li>
+                                <li class="features-item__point">RIAs</li>
+                                <li class="features-item__point">Bankers</li>
+                                <li class="features-item__point">Due Diligence</li>
+                            </ul>
+                        </div>
+
+                        <div class="features-item-rect">
+                            <img class="features-item-rect__figure" src="./img/features/rect-second.png" alt="react">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features__col animate">
+                    <div class="features-item">
+                        <img class="features-item__icon" src="./img/features/icon-analytics.svg" alt="analytics">
+                        <div class="features-item__content">
+                            <h5 class="features-item__subtitle">Analytics</h5>
+
+                            <ul class="features-item__list">
+                                <li class="features-item__point">Summaries</li>
+                                <li class="features-item__point">Trends</li>
+                                <li class="features-item__point">Inventory</li>
+                                <li class="features-item__point">Tax Basis</li>
+                                <li class="features-item__point">Reporting</li>
+                                <li class="features-item__point">Return of Capital</li>
+                                <li class="features-item__point">Tax Planning</li>
+                            </ul>
+                        </div>
+
+                        <div class="features-item-rect">
+                            <img class="features-item-rect__figure" src="./img/features/rect-third.png" alt="react">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-description animate">
+                <img class="features-description__logo" src="./img/features/features-repositax.png" alt="repositax">
+                <div class="features-description__wrapper">
+                    All protected inside of a secure environment with the highest level of encryption available.
+                </div>
+                <img class="features-description__logo" src="./img/features/features-repositax.png" alt="repositax">
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h3 class="title animate">Benefits</h3>
+
+            <div class="benefits__wrapper animate">
+                <div class="benefits__row">
+                    <div class="benefits-item">
+                        <img class="benefits-item__icon" src="./img/benefits/benefits-item-first.svg" alt="benefits">
+                        <div class="benefits-item__text">Saves time by sharing the same documents</div>
+                    </div>
+
+                    <div class="benefits-item">
+                        <img class="benefits-item__icon" src="./img/benefits/benefits-item-second.svg" alt="benefits">
+                        <div class="benefits-item__text">Increases control of private data</div>
+                    </div>
+                </div>
+
+                <div class="benefits__row">
+                    <div class="benefits-item">
+                        <img class="benefits-item__icon" src="./img/benefits/benefits-item-third.svg" alt="benefits">
+                        <div class="benefits-item__text">Increases security with one system</div>
+                    </div>
+
+                    <div class="benefits-item">
+                        <img class="benefits-item__icon" src="./img/benefits/benefits-item-fourth.svg" alt="benefits">
+                        <div class="benefits-item__text">Improves financial planning</div>
+                    </div>
+
+                    <div class="benefits-item">
+                        <img class="benefits-item__icon" src="./img/benefits/benefits-item-fifth.svg" alt="benefits">
+                        <div class="benefits-item__text">Advisors can view multiple client accounts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hiw" class="hiw">
+        <svg class="rect-2" width="1440" height="1664" viewBox="0 0 1440 1664" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1440 832.364L4.37664e-05 1663.75L0.000116448 0.979063L1440 832.364Z" fill="#3BA2EC" fill-opacity="0.15"/>
+        </svg>
+
+        <div class="container">
+            <h3 class="title animate">How it Works</h3>
+
+            <div class="hiw__snake">
+                <div class="hiw-position">
+                    <div class="hiw__text hiw__text_even hiw__text_first animate-snake-mask-first">
+                        The system automatically configures an
+                        account for each investor and sends a
+                        notification to them that new documents are
+                        in their account.
+                    </div>
+
+                    <div class="hiw__text hiw__text_odd hiw__text_first animate-snake-mask-second">
+                        Investor then securely invites trusted advisors to view the same documents eliminating
+                        the need to forward on by email or manage multiple storage accounts for better financial planning.
+                    </div>
+
+                    <div class="hiw__text hiw__text_even hiw__text_second animate-snake-mask-third">
+                        Investors may also upload K-1s received from companies not yet registered in the system.
+                    </div>
+
+                    <div class="hiw__text hiw__text_odd hiw__text_second animate-snake-mask-fourth">
+                        The system automatically creates summary tables of each investment showing the performance history.
+                    </div>
+
+                    <div class="hiw__text hiw__text_even hiw__text_third animate-snake-mask-fifth">
+                        The system also allows the investors to request the financial statements
+                        and corporate documents to be stored together for each investment.
+                    </div>
+
+                    <div class="hiw__text hiw__text_odd hiw__text_third animate-snake-mask-sixth">
+                        With the financial statements, the system can make valuation estimates,
+                        identify performance trends and even maintain the tax basis of each investment.
+                    </div>
+                </div>
+
+                <div class="hiw-content">
+                    <div class="hiw-content-item hiw-content-item_first hiw-content-item_even animate-snake-mask-first">
+                        <img src="./img/hiw/hiw-icon-first.png" alt="icon">
+                    </div>
+
+                    <div class="hiw-content-item hiw-content-item_second hiw-content-item_even animate-snake-mask-third">
+                        <div class="hiw-content-item__step">
+                            <img src="./img/hiw/hiw-icon-third.png" alt="icon">
+                        </div>
+                    </div>
+
+                    <div class="hiw-content-item hiw-content-item_third hiw-content-item_even animate-snake-mask-fifth">
+                        <div class="hiw-content-item__step">
+                            <img src="./img/hiw/hiw-icon-fifth.png" alt="icon">
+                        </div>
+                    </div>
+
+                    <div class="hiw-content-item hiw-content-item_first hiw-content-item_odd animate-snake-mask-second">
+                        <div class="hiw-content-item__step">
+                            <img src="./img/hiw/hiw-icon-second.png" alt="icon">
+                        </div>
+                    </div>
+
+                    <div class="hiw-content-item hiw-content-item_second hiw-content-item_odd animate-snake-mask-fourth">
+                        <div class="hiw-content-item__step">
+                            <img src="./img/hiw/hiw-icon-fourth.png" alt="icon">
+                        </div>
+                    </div>
+
+                    <div class="hiw-content-item hiw-content-item_third hiw-content-item_odd animate-snake-mask-sixth">
+                        <div class="hiw-content-item__step">
+                            <img src="./img/hiw/hiw-icon-sixth.png" alt="icon">
+                        </div>
+                    </div>
+
+                    <svg class="hiw-content__snake" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" width="219" height="1036" viewBox="0 0 219 1036">
+                        <defs>
+                            <path id="first" class="path path1" d="M115 3C161.944 2.99999 200 40.3842 200 86.5C200 132.616 161.944 170 115 170" stroke="white" stroke-width="5"/>
+                            <path id="second" class="path path2" d="M115.5 170L100 170C53.0558 170 15 207.384 15 253.5C15 299.616 53.0558 337 100 337L115 337" stroke="white" stroke-width="5"/>
+                            <path id="third" class="path path3" d="M115 337C161.944 337 200 374.384 200 420.5C200 466.616 161.944 504 115 504" stroke="white" stroke-width="5"/>
+                            <path id="fourth" class="path path4" d="M115.5 504L100 504C53.0558 504 15 541.384 15 587.5C15 633.616 53.0558 671 100 671H116" stroke="white" stroke-width="5"/>
+                            <path id="fifth" class="path path5" d="M115 671C161.944 671 200 708.384 200 754.5C200 800.616 161.944 838 115 838" stroke="white" stroke-width="5"/>
+                            <path id="sixth" d="M114.5 837H99C52.0558 837 14 874.384 14 920.5C14 966.616 52.0558 1004 99 1004H115" stroke="white" stroke-width="5"/>
+
+                            <mask id="first-mask"><use class="mask mask1" xlink:href="#first" /></mask>
+                            <mask id="second-mask"><use class="mask mask2" xlink:href="#second" /></mask>
+                            <mask id="third-mask"><use class="mask mask3" xlink:href="#third" /></mask>
+                            <mask id="fourth-mask"><use class="mask mask4" xlink:href="#fourth" /></mask>
+                            <mask id="fifth-mask"><use class="mask mask5" xlink:href="#fifth" /></mask>
+                            <mask id="sixth-mask"><use class="mask mask6" xlink:href="#sixth" /></mask>
+                        </defs>
+
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" width="219" height="1036.36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                <feOffset dx="2" dy="14"/>
+                                <feGaussianBlur stdDeviation="7"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                            </filter>
+                        </defs>
+
+                        <g class="paths" filter="url(#filter0_d)">
+                            <use xlink:href="#first" mask="url(#first-mask)" />
+                            <use xlink:href="#second" mask="url(#second-mask)" />
+                            <use xlink:href="#third" mask="url(#third-mask)" />
+                            <use xlink:href="#fourth" mask="url(#fourth-mask)" />
+                            <use xlink:href="#fifth" mask="url(#fifth-mask)" />
+                            <use xlink:href="#sixth" mask="url(#sixth-mask)" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <button class="btn btn-secondary animate">More Details</button>
+        </div>
+    </section>
+
+    <section id="ref" class="ref">
+        <div class="ref__container">
+            <h3 class="title animate">References</h3>
+
+            <div class="ref-slider animate">
+                <div class="references-slider">
+                    <div class="slick-item">
+                        <div class="slick-item__quote">
+                            This is a great system for our
+                            company and our clients.
+                        </div>
+
+                        <img class="slick-item__avatar" src="./img/ref/avatar-1.png" alt="avatar">
+
+                        <div class="slick-item__name">Robert Scherer</div>
+                        <div class="slick-item__label">
+                            CEO <span>TAG Management, Inc.</span>
+                        </div>
+                    </div>
+
+                    <div class="slick-item">
+                        <div class="slick-item__quote">
+                            This system saves us so much time, especially during tax season..
+                        </div>
+
+                        <img class="slick-item__avatar" src="./img/ref/avatar-2.png" alt="avatar">
+
+                        <div class="slick-item__name">Alan Durant</div>
+                        <div class="slick-item__label">
+                            Partner <span>Matranga & Co</span>
+                        </div>
+                    </div>
+
+                    <div class="slick-item">
+                        <div class="slick-item__quote">
+                            This system makes details readily available to
+                            investors that they never had before and all in one place.
+                        </div>
+
+                        <img class="slick-item__avatar" src="./img/ref/avatar-3.png" alt="avatar">
+
+                        <div class="slick-item__name">Ajay Gupta</div>
+                        <div class="slick-item__label">
+                            Chief Investment Strategist <span>Creative Planning, Inc</span>
+                        </div>
+                    </div>
+
+                    <div class="slick-item">
+                        <div class="slick-item__quote">
+                            This system makes details readily available to
+                            investors that they never had before and all in one place.
+                        </div>
+
+                        <img class="slick-item__avatar" src="./img/ref/avatar-3.png" alt="avatar">
+
+                        <div class="slick-item__name">Ajay Gupta</div>
+                        <div class="slick-item__label">
+                            Chief Investment Strategist <span>Creative Planning, Inc</span>
+                        </div>
+                    </div>
+
+                    <div class="slick-item">
+                        <div class="slick-item__quote">
+                            This system makes details readily available to
+                            investors that they never had before and all in one place.
+                        </div>
+
+                        <img class="slick-item__avatar" src="./img/ref/avatar-3.png" alt="avatar">
+
+                        <div class="slick-item__name">Ajay Gupta</div>
+                        <div class="slick-item__label">
+                            Chief Investment Strategist <span>Creative Planning, Inc</span>
+                        </div>
+                    </div>
+
+                    <div class="slick-item">
+                        <div class="slick-item__quote">
+                            This system makes details readily available to
+                            investors that they never had before and all in one place.
+                        </div>
+
+                        <img class="slick-item__avatar" src="./img/ref/avatar-3.png" alt="avatar">
+
+                        <div class="slick-item__name">Ajay Gupta</div>
+                        <div class="slick-item__label">
+                            Chief Investment Strategist <span>Creative Planning, Inc</span>
+                        </div>
+                    </div>
+
+                    <div class="slick-item">
+                        <div class="slick-item__quote">
+                            This system makes details readily available to
+                            investors that they never had before and all in one place.
+                        </div>
+
+                        <img class="slick-item__avatar" src="./img/ref/avatar-3.png" alt="avatar">
+
+                        <div class="slick-item__name">Ajay Gupta</div>
+                        <div class="slick-item__label">
+                            Chief Investment Strategist <span>Creative Planning, Inc</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="price" class="price">
+        <div class="price__container">
+            <h3 class="title animate">Pricing</h3>
+
+            <div class="price-slider animate">
+                <div class="price-slider__item">
+                    <div class="price-card">
+                        <div class="price-card__name">Free</div>
+                        <div class="price-card-inner">
+                            <div class="price-card-inner__text">10 K-1s / 1GB</div>
+                            <div class="price-card-inner__progressbar price-card-inner__progressbar_1"></div>
+                        </div>
+                        <div class="price-card-month">
+                            <div class="price-card-month__circle">
+                                $ 0
+                            </div>
+
+                            <div class="price-card-month__text">
+                                month
+                            </div>
+                        </div>
+
+                        <div class="price-card__annual">Annual</div>
+
+                        <div class="price-card-year">
+                            <div class="price-card-year__circle">
+                                $ 0
+                            </div>
+
+                            <div class="price-card-year__text">
+                                month
+                            </div>
+                        </div>
+
+                        <a class="price-card__btn" href="/">
+                            Sign Up
+
+                            <img src="/img/pricing/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="price-slider__item">
+                    <div class="price-card">
+                        <div class="price-card__name">Income</div>
+                        <div class="price-card-inner">
+                            <div class="price-card-inner__text">25 K-1s / 5GB</div>
+                            <div class="price-card-inner__progressbar price-card-inner__progressbar_2"></div>
+                        </div>
+                        <div class="price-card-month">
+                            <div class="price-card-month__circle">
+                                $ 9
+                            </div>
+
+                            <div class="price-card-month__text">
+                                month
+                            </div>
+                        </div>
+
+                        <div class="price-card__annual">Annual</div>
+
+                        <div class="price-card-year">
+                            <div class="price-card-year__circle">
+                                $ 90
+                            </div>
+
+                            <div class="price-card-year__text">
+                                month
+                            </div>
+                        </div>
+
+                        <a class="price-card__btn" href="/">
+                            Sign Up
+
+                            <img src="/img/pricing/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="price-slider__item">
+                    <div class="price-card">
+                        <div class="price-card__name">Growth</div>
+                        <div class="price-card-inner">
+                            <div class="price-card-inner__text">100 K-1s / 25GB</div>
+                            <div class="price-card-inner__progressbar price-card-inner__progressbar_3"></div>
+                        </div>
+                        <div class="price-card-month">
+                            <div class="price-card-month__circle">
+                                $ 24
+                            </div>
+
+                            <div class="price-card-month__text">
+                                month
+                            </div>
+                        </div>
+
+                        <div class="price-card__annual">Annual</div>
+
+                        <div class="price-card-year">
+                            <div class="price-card-year__circle">
+                                $ 240
+                            </div>
+
+                            <div class="price-card-year__text">
+                                month
+                            </div>
+                        </div>
+
+                        <a class="price-card__btn" href="/">
+                            Sign Up
+
+                            <img src="/img/pricing/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="price-slider__item">
+                    <div class="price-card">
+                        <div class="price-card__name">Value</div>
+                        <div class="price-card-inner">
+                            <div class="price-card-inner__text">250 K-1s / 100GB</div>
+                            <div class="price-card-inner__progressbar price-card-inner__progressbar_4"></div>
+                        </div>
+                        <div class="price-card-month">
+                            <div class="price-card-month__circle">
+                                $ 49
+                            </div>
+
+                            <div class="price-card-month__text">
+                                month
+                            </div>
+                        </div>
+
+                        <div class="price-card__annual">Annual</div>
+
+                        <div class="price-card-year">
+                            <div class="price-card-year__circle">
+                                $ 490
+                            </div>
+
+                            <div class="price-card-year__text">
+                                month
+                            </div>
+                        </div>
+
+                        <a class="price-card__btn" href="/">
+                            Sign Up
+
+                            <img src="/img/pricing/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="price-slider__item">
+                    <div class="price-card">
+                        <div class="price-card__name">Enterprise</div>
+                        <div class="price-card-inner">
+                            <div class="price-card-inner__text">>250 K-1s / 100GB+</div>
+                            <div class="price-card-inner__progressbar price-card-inner__progressbar_5"></div>
+                        </div>
+
+                        <div class="price-card-call">
+                            <img src="./img/pricing/phone.svg" alt="phone">
+
+                            <div class="price-card-call__text">Call us</div>
+                        </div>
+
+
+                        <a class="price-card__btn" href="/">
+                            Sign Up
+
+                            <img src="/img/pricing/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about__container">
+            <h3 class="title animate">About</h3>
+
+            <div class="about-management animate">
+                <div class="about__title">
+                    Management
+                </div>
+
+                <div class="about-management__wrapper">
+                    <div class="about-management-user">
+                        <div class="about-management-user__circle">
+                            <img class="about-management-user__img" src="./img/about/user.png" alt="user">
+                        </div>
+
+                        <div class="about-management-user__content">
+                            <div class="about-management-user__name">Michael McCarthy</div>
+                            <div class="about-management-user__label">CEO</div>
+                        </div>
+                    </div>
+
+                    <div class="about-management-user">
+                        <div class="about-management-user__circle">
+                            <img class="about-management-user__img" src="./img/about/user.png" alt="user">
+                        </div>
+
+                        <div class="about-management-user__content">
+                            <div class="about-management-user__name">Michael Marmor</div>
+                            <div class="about-management-user__label">CTO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-contact animate">
+                <div class="about__title">
+                    Contact
+                </div>
+
+                <div class="about-contact__wrapper">
+                    <div class="about-contact__col">
+                        <div class="about-contact__subtitle">
+                            Headquarters
+                        </div>
+                        <div class="about-contact__text">
+                            Repositax, inc. <br/>
+                            1804 Garnet Avenue <br/>
+                            Suite 175 <br/>
+                            San Diego, CA 92109
+                        </div>
+                    </div>
+
+                    <div class="about-contact__col">
+                        <div class="about-contact__subtitle">
+                            Sales
+                        </div>
+                        <div class="about-contact__text">
+                            <a class="about-contact__text" href="mailto:support@repositax.com">support@repositax.com</a>
+                        </div>
+                    </div>
+
+                    <div class="about-contact__col">
+                        <div class="about-contact__subtitle">
+                            Telephone
+                        </div>
+                        <div class="about-contact__text">
+                            <a class="about-contact__text" href="tel:(858)8249100">(858) 824-9100</a>
+                        </div>
+                    </div>
+
+                    <div class="about-contact__col">
+                        <div class="about-contact__subtitle">
+                            Support
+                        </div>
+                        <div class="about-contact__text">
+                            <a class="about-contact__text" href="mailto:support@repositax.com">support@repositax.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="footer__top animate">
+            <div class="container">
+                <nav class="footer-nav">
+                    <ul class="footer__list">
+                        <li class="footer-nav__item">
+                            <a data-scroll href="#home">Home</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a data-scroll href="#features">Feature</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a data-scroll href="#hiw">How it works</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a data-scroll href="#ref">References</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a data-scroll href="#price">Pricing</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a data-scroll href="#about">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer__bottom animate">
+            <div class="container">
+                <div class="footer__street">1804 Garnet Avenue, Suite 175, San Diego, CA 92129</div>
+
+                <div class="footer-info">
+                    <div class="footer-info__copy">
+                        © Repositax, Inc.
+                    </div>
+
+                    <div class="footer-info__links">
+                        <a href="/" class="link">Terms & Conditions</a>
+                        <a href="/" class="link">Private Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        ScrollReveal().reveal('.animate');
+
+        ScrollReveal().reveal('.animate-snake-mask-first', {delay: 200});
+        ScrollReveal().reveal('.animate-snake-mask-second', { delay: 800 });
+        ScrollReveal().reveal('.animate-snake-mask-third', { delay: 800 });
+        ScrollReveal().reveal('.animate-snake-mask-fourth', { delay: 800 });
+        ScrollReveal().reveal('.animate-snake-mask-fifth', { delay: 800 });
+        ScrollReveal().reveal('.animate-snake-mask-sixth', { delay: 800 });
+    </script>
+    <script src="/js/index.js"></script>
 </body>
 </html>

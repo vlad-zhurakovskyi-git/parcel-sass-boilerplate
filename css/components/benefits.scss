@@ -1,0 +1,26 @@
+.benefits {
+  margin-top: 106px;
+
+  .title {
+    margin-bottom: 15px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &-item {
+    width: 385px;
+    margin-top: 30px;
+
+    &__text {
+      margin: 15px auto 0 auto;
+      font-size: 21px;
+      line-height: 30px;
+      color: #061321;
+    }
+  }
+}

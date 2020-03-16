@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" width="219" height="1036" viewBox="0 0 219 1036">
+    <defs>
+        <path id="first" class="path path1" d="M115 3C161.944 2.99999 200 40.3842 200 86.5C200 132.616 161.944 170 115 170" stroke="white" stroke-width="5"/>
+        <path id="second" class="path path2" d="M115.5 170L100 170C53.0558 170 15 207.384 15 253.5C15 299.616 53.0558 337 100 337L115 337" stroke="white" stroke-width="3"/>
+        <path id="third" class="path path3" d="M115 337C161.944 337 200 374.384 200 420.5C200 466.616 161.944 504 115 504" stroke="white" stroke-width="3"/>
+        <path id="fourth" class="path path4" d="M115.5 504L100 504C53.0558 504 15 541.384 15 587.5C15 633.616 53.0558 671 100 671H116" stroke="white" stroke-width="3"/>
+        <path id="fifth" class="path path5" d="M115 671C161.944 671 200 708.384 200 754.5C200 800.616 161.944 838 115 838" stroke="white" stroke-width="3"/>
+        <path id="sixth" d="M114.5 837H99C52.0558 837 14 874.384 14 920.5C14 966.616 52.0558 1004 99 1004H115" stroke="white" stroke-width="3"/>
+        <mask id="first-mask"><use class="mask mask1" xlink:href="#first" /></mask>
+        <mask id="second-mask"><use class="mask mask2" xlink:href="#second" /></mask>
+        <mask id="third-mask"><use class="mask mask3" xlink:href="#third" /></mask>
+        <mask id="fourth-mask"><use class="mask mask4" xlink:href="#fourth" /></mask>
+        <mask id="fifth-mask"><use class="mask mask5" xlink:href="#fifth" /></mask>
+        <mask id="sixth-mask"><use class="mask mask6" xlink:href="#sixth" /></mask>
+    </defs>
+    <g class="paths">
+        <use xlink:href="#first" mask="url(#first-mask)" />
+        <use xlink:href="#second" mask="url(#second-mask)" />
+        <use xlink:href="#third" mask="url(#third-mask)" />
+        <use xlink:href="#fourth" mask="url(#fourth-mask)" />
+        <use xlink:href="#fifth" mask="url(#fifth-mask)" />
+        <use xlink:href="#sixth" mask="url(#sixth-mask)" />
+    </g>
+</svg>

@@ -1,0 +1,111 @@
+.about {
+  padding: 160px 0 70px 0;
+
+  @media screen and (max-width: 1189px){
+    display: none;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &-management {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 54px;
+
+    &__wrapper {
+      display: flex;
+      margin-left: auto;
+    }
+
+    &-user {
+      display: flex;
+      align-items: center;
+      width: 350px;
+
+      + .about-management-user {
+        margin-left: 120px;
+      }
+
+      &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $color-white;
+
+        img {
+          width: 22px;
+          height: auto;
+        }
+      }
+
+      &__content {
+        margin-left: 20px;
+      }
+
+      &__name {
+        font-weight: 500;
+        font-size: 18px;
+        color: $color-blue;
+      }
+
+      &__label {
+        font-size: 16px;
+        color: $color-grey;
+      }
+    }
+  }
+
+  &-contact {
+    display: flex;
+    margin-top: 25px;
+
+    &__col {
+      width: 350px;
+
+      &:nth-of-type(2n) {
+        margin-left: 120px;
+      }
+
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        margin-bottom: 42px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      color: $color-grey;
+    }
+
+    &__text {
+      margin-top: 12px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 34px;
+      color: $color-black;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 820px;
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 70px;
+    letter-spacing: 0.01em;
+    color: $color-black;
+    text-transform: uppercase;
+  }
+}

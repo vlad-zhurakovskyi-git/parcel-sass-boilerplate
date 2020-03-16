@@ -1,0 +1,183 @@
+.hiw {
+  position: relative;
+  margin-top: 118px;
+
+  .btn {
+    min-width: 248px;
+    display: block;
+    margin: 40px auto 0 auto;
+  }
+
+  &__snake {
+    min-height: 1065px;
+  }
+
+  &__text {
+    position: absolute;
+    width: 352px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #061321;
+
+    &_even {
+      left: 20px;
+
+      &.hiw__text {
+        &_first {
+          top: 22px;
+        }
+
+        &_second {
+          top: 366px;
+        }
+
+        &_third {
+          top: 702px;
+        }
+      }
+    }
+
+    &_odd {
+      right: 20px;
+
+      &.hiw__text {
+        &_first {
+          top: 202px;
+        }
+
+        &_second {
+          top: 536px;
+        }
+
+        &_third {
+          top: 870px;
+        }
+      }
+    }
+  }
+
+  &-position {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 56px auto 0 auto;
+  }
+
+  &-content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 220px;
+    margin: 56px auto 0 auto;
+
+    &-item {
+      position: absolute;
+      display: flex;
+
+      img {
+        width: 280px;
+      }
+
+      &_even {
+        left: -86px;
+
+        .hiw-content-item__step {
+          position: relative;
+          width: 260px;
+          height: 138px;
+          background-size: contain;
+        }
+
+        &.hiw-content-item_first {
+          top: 28px;
+        }
+
+        &.hiw-content-item_second {
+          top: 366px;
+        }
+
+        &.hiw-content-item_third {
+          top: 698px;
+        }
+      }
+
+      &_odd {
+        right: -66px;
+
+        .hiw-content-item__step {
+          width: 260px;
+          height: 138px;
+          background-size: cover;
+        }
+
+        &.hiw-content-item_first {
+          top: 200px;
+        }
+
+        &.hiw-content-item_second {
+          top: 532px;
+        }
+
+        &.hiw-content-item_third {
+          top: 866px;
+        }
+      }
+    }
+
+    &__snake {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+
+      &_animate {
+        .mask {
+          animation: dash 5s linear forwards;
+        }
+      }
+    }
+  }
+
+  .paths {
+    fill: none;
+    stroke: black;
+    stroke-dasharray: 2;
+  }
+
+  .mask {
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+    stroke-dasharray: 1666;
+    stroke-dashoffset: 1666;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .mask2 {
+    animation-delay: 0.8s;
+  }
+
+  .mask3 {
+    animation-delay: 1.7s;
+  }
+
+  .mask4 {
+    animation-delay: 2.5s;
+  }
+
+  .mask5 {
+    animation-delay: 3.4s;
+  }
+
+  .mask6 {
+    animation-delay: 4.3s;
+  }
+}

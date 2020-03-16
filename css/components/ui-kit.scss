@@ -1,0 +1,122 @@
+body {
+  position: relative;
+  margin: 0 auto;
+  background-color: #F1F4FB;
+  font-family: $font-main;
+}
+
+* {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link {
+  font-size: 15px;
+  color: $color-grey;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 44px;
+  line-height: 70px;
+  color: #061321;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  height: 45px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  &-primary {
+    background-color: $color-blue;
+    border: none;
+    color: $color-white;
+
+    &:hover {
+      background: #9C69DF;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &-secondary {
+    background-color: transparent;
+    border: 1px solid $color-blue;
+    color: $color-blue;
+
+    &:hover {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+  }
+}
+
+.main-screen {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 100%;
+
+  &_desktop {
+    max-width: 1170px;
+    margin: 110px auto 0 auto;
+
+    @media screen and (max-width: 1189px){
+      display: none;
+    }
+  }
+
+  &_mobile {
+    max-width: 670px;
+    margin: 95px auto 0 auto;
+
+    @media screen and (min-width: 1190px){
+      display: none;
+    }
+  }
+}
+
+.rect-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+
+  @media screen and (max-width: 1189px){
+    top: -288px;
+  }
+}
+
+.rect-2 {
+  position: absolute;
+  left: 0;
+  top: -195px;
+  width: 100%;
+}

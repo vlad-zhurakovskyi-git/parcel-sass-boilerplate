@@ -1,0 +1,126 @@
+.ref {
+  margin: 110px 0 74px 0;
+
+  &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .references-slider {
+    .slick-item {
+      position: relative;
+      max-width: 370px;
+      margin: 0 14px 30px 14px;
+      padding-bottom: 25px;
+
+      &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        width: calc(100% - 70px);
+        margin: 0 auto;
+        background-color: #D6E8F9;
+      }
+
+      &__quote {
+        position: relative;
+        max-width: 328px;
+        min-height: 102px;
+        margin: 0 auto;
+        padding: 20px 0;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        color: $color-black;
+
+        &:after,
+        &:before {
+          position: absolute;
+          content: '';
+          width: 24px;
+          height: 18px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        &:after {
+          top: 0;
+          left: -16px;
+          background-image: url("/img/ref/quote-left.svg");
+        }
+
+        &:before {
+          bottom: 0;
+          right: -16px;
+          background-image: url("/img/ref/quote-right.svg");
+        }
+      }
+
+      &__avatar {
+        margin: 20px auto 0 auto;
+      }
+
+      &__name {
+        margin-top: 18px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 50px;
+        color: $color-blue;
+      }
+
+      &__label {
+        display: block;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-black;
+
+        span {
+          display: block;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .slick-list {
+      margin-left: -14px;
+      margin-right: -14px;
+    }
+
+    .slick-dots {
+      bottom: -20px;
+
+      li {
+        width: auto;
+        height: auto;
+        margin: 7px;
+
+        &.slick-active {
+          button {
+            background-color: $color-purple
+          }
+        }
+
+        button {
+          width: 10px;
+          height: 10px;
+          padding: 0;
+          margin: 0;
+          background-color: transparentize($color-purple, 0.8);
+          border-radius: 50%;
+          transition: 0.3s;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
